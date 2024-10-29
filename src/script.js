@@ -128,3 +128,31 @@
 
 // console.log(persons.sort((a, b) => a.name.localeCompare(b.name))); // 31. Sortera person-array i bokstavsordning
 
+// console.log(persons.map(person => {return {...person, name: person.name.toUpperCase()};})); // 32. I person-arrayen ovan, gör om alla namn till _versaler_.
+
+// console.log(persons.map(person => {return {...person, name: person.name.split('').reverse().join('')};})); // 33. I person-arrayen ovan, _spegelvänd_ alla namn.
+
+// let fruits = ["apelsin", "päron", "äpple", "kiwi"];
+
+// fruits.forEach(fruit => console.log(fruit)); // 34. Loopa med forEach och skriv ut varje ord
+
+// for (let fruit of fruits) { // 35. Loopa med for of och skriv ut varje ord
+//     console.log(fruit);
+// }
+
+// for (let i = 0; i < fruits.length; i++) { // 36. Loopa med for och skriv ut varje ord
+//     console.log(fruits[i]);
+// }
+
+// 37. Loopa ut och skriv ut med index
+// fruits.forEach((fruit, index) => { // ForEach
+//     console.log(`${index} - ${fruit}`);
+// });
+
+// for (let [index, fruit] of fruits.entries()) { // for of loop - entries() för att sätta koppla samman [index, fruit] ur arrayen
+//     console.log(`${index} - ${fruit}`);
+// }
+
+// for (let i = 0; i < fruits.length; i++) { // Vanlig for loop
+// console.log(`${i} - ${fruits[i]}`);
+// }
