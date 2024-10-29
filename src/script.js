@@ -69,6 +69,62 @@
 // nums.reverse();
 // console.log(nums);
 
-let str = "Supercalifragilisticexpialidocious";
+// let str = "Supercalifragilisticexpialidocious";
 
-console.log(str.includes("n")); // 18. Kika om strängen innehåller bokstaven 'n'
+// console.log(str.includes("n")); // 18. Kika om strängen innehåller bokstaven 'n'
+// console.log(str.includes("x")); // 19. Kika om strängen innehåller bokstaven 'x'
+// console.log(str.indexOf("p")); // 20. Hitta position för 'p'
+// console.log(str.slice(0, 5)); // 21. Första 5 tecknen
+// console.log(str.slice(-7)); // 22. Sista 7 tecknen
+
+// let numArray = [23, 45, 5, 62, 1, 21, 3, 54];
+
+// console.log(numArray.filter(num => num > 5)); // 23. Filtrera alla nummer över 5
+
+// console.log(numArray.filter(num => num < 5)); // 24. Filtrera alla nummer under 5
+
+// let persons = [
+//   {
+//     name: "Felicia",
+//     age: 12,
+//   },
+//   {
+//     name: "Pelle",
+//     age: 20,
+//   },
+//   {
+//     name: "Peter",
+//     age: 59,
+//   },
+//   {
+//     name: "Anna",
+//     age: 32,
+//   },
+//   {
+//     name: "Jocke",
+//     age: 18,
+//   },
+//   {
+//     name: "Ella",
+//     age: 3,
+//   },
+// ];
+
+// console.log(persons.filter(person => person.age >= 18).map(person => person.name)); // 25. Skriv ut alla namn som är 18 år och äldre
+
+// console.log(persons.filter(person => person.age < 18).map(person => person.name)); // 26. Skriv ut alla namn som är mindre än 18 år
+
+// let arr = ["beta", "alfa", "gamma"];
+
+// console.log(arr.sort()); // 27. Sortera i bokstavsordning
+
+// let nums = [1, 5, 7, 9, 3, 4, 2, 6, 8];
+
+// console.log(nums.sort((a, b) => a - b)); // 28. Sortera numeriskt
+
+// console.log(persons.sort((a, b) => a.age - b.age)); // 29. Sortera person-array med ålder, yngst först
+
+// console.log(persons.sort((a, b) => b.age - a.age)); // 30. Sortera person-array med ålder, äldst först
+
+// console.log(persons.sort((a, b) => a.name.localeCompare(b.name))); // 31. Sortera person-array i bokstavsordning
+
