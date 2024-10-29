@@ -1,69 +1,74 @@
-console.log("Hello array thuesday");
 
-// 1.1 Skapa och Manipulera Arrayer
-// Exempel 1: Skapa en Array
-let fruits = ["apple", "mango", "banana"];
+// 1. Gör en array som innehåller 5 st olika frukter av datatypen string.
+// let fruits = ["apple", "banana", "pear", "orange", "lime"];
+// console.log(fruits);
 
-// console.log("fruits: ", fruits);
+// // 2. En array som innehåller 3 olika datatyper
+// let datatypesArray = ["string", 11, true];
+// console.log(datatypesArray);
 
-// Exempel 2: Åtkomst till Array-element
-// console.log("fruit at index 0: ", fruits[0]);
-// console.log("fruit at index 1: ", fruits[1]);
-// console.log("fruit at index 2: ", fruits[2]);
+// // 3. Låt "animals" innehålla antalet objekt i arrayen
+// let animals = ["cat", "hamster", "parrot", "funky chihuahua"];
+// console.log(animals.length);
 
-// Exempel 3: Ändra ett Array-element
-fruits[1] = "mandarin";
-// console.log("fruit at index 1 from line 15 and not from line 5: ", fruits[1]);
-// console.log("fruits from line 15 and not from line 5: ", fruits);
+// console.log(animals[0]); // 4. Hämta cat
 
-// 1.2 Array-metoder
-// Exempel 4: push() och pop()
-fruits.push("kiwi");
-// console.log("fruits: line 21", fruits);
+// console.log(animals[3]); // 5. Hämta funky chihuahua
 
-let removedFruit = fruits.pop();
+// // 6. Byt ut hamster mot tiger
+// animals[1] = "tiger";
+// console.log(animals[1]);
 
-// console.log("fruits line 24: ", fruits);
-// console.log("removedFruit line 24: ", typeof removedFruit);
+// 7. Lägg ihop två arrayer a och b
+// let a = [1, 2, 3];
+// let b = [4, 5, 6];
+// let aplusb = a.concat(b);
+// console.log(aplusb);
 
-//
-// Exempel 5: unshift() och shift()
+// 8. Merga array "b" in i "a" på index 3
+// let a = [1, 2, 3, 7, 8, 9];
+// let b = [4, 5, 6];
 
-let lenghtOfFruitsArray = fruits.unshift("strawberry");
-// console.log("fruits: line 32", fruits);
-// console.log("lenghtOfFruitsArray: line 32", lenghtOfFruitsArray);
+// a.splice(3, 0, ...b);
+// console.log(a);
 
-let strawberry = fruits.shift();
-console.log("fruits: line 36", fruits);
-// console.log("strawberry: line 36", strawberry);
+// 9. Klona array
+// let arr = ["a", "b", "c"];
 
-//
-// Exempel 6: splice()
-// Lägg till element med splice()
-fruits.splice(1, 0, "lime", "watermelon");
+// let clonedArr = arr.slice();
+// console.log(clonedArr);
 
-// console.log("fruits: line 43", fruits);
+// let fruits = ["kiwi", "apple", "pear"];
 
-// Ta bort element med splice()
-fruits.splice(2, 1);
-// console.log("fruits: line 48", fruits);
-fruits.splice(3, 1);
-console.log("fruits: line 50", fruits);
+// fruits.push("banana"); // 10. Lägg till en frukt i slutet av arrayen
+// console.log(fruits);
 
-// 1.3 Iterera över Arrayer
-// Exempel 7: For-loop
-for (let i = 0; i < fruits.length; i++) {
-  console.log("fruit at index...", fruits[i]);
-}
-// Exempel 8: For-of-loop
-for (const fruit of fruits) {
-  console.log(
-    "Each fruit from the fruits array inside the for-of-looop:  ",
-    fruit
-  );
-}
-// Exempel 9: forEach()
+// fruits.unshift("orange"); // 11. Lägg till en frukt i början av arrayen
+// console.log(fruits);
 
-fruits.forEach(function (fruit, index) {
-  console.log("fruit: ", fruit);
-});
+// fruits.pop(); // 12. Ta bort sista frukten i arrayen
+// console.log(fruits);
+
+// fruits.shift(); // 13. Ta bort första frukten i arrayen
+// console.log(fruits);
+
+// fruits.splice(1, 0, "orange"); // 14. Sött in frukt på index 1
+// console.log(fruits);
+
+// fruits.splice(2, 0, "strawberry", "blueberry", "mango"); // 15. Sätt in tre frukter på index 2
+// console.log(fruits);
+
+// let names = ["David", "Christoffer", "Johan", "Maja"]; 
+
+// names.splice(1, 2); // 16. Ta bort Christoffer och Johan
+// console.log(names);
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// // 17. Spegelvänd arrayen ovan
+// nums.reverse();
+// console.log(nums);
+
+let str = "Supercalifragilisticexpialidocious";
+
+console.log(str.includes("n")); // 18. Kika om strängen innehåller bokstaven 'n'
