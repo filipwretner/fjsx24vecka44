@@ -156,3 +156,69 @@
 // for (let i = 0; i < fruits.length; i++) { // Vanlig for loop
 // console.log(`${i} - ${fruits[i]}`);
 // }
+
+
+// OBJECT BOOTCAMP
+
+// 1. Skapa ett objekt som innehåller data om en bok, nycklar som kan inkluderas är title, author, numPages.
+// 2. Skapa en array av objekt med flera stycken böcker
+// 3. Skapa en funktion som söker efter en titel i arrayen, om den hittar en så returneras objektet annars null. Låt funktionen ta emot arrayen med bok-objekt och söktermen som parametrar.
+
+// bookOne = {title: "Cthulu", author: "Lovecraft", numPages: 300};
+// bookTwo = {title: "Different", author: "Lovecraft", numPages: 300};
+// bookThree = {title: "More Different", author: "Lovecraft", numPages: 300};
+
+// let library = [bookOne, bookTwo, bookThree];
+// let searchTitle = library.filter(book => book.title.toLowerCase().includes("cthulu"));
+
+// console.log(searchTitle);
+
+// Letter frequency
+
+
+
+// User Register
+
+// filterByCountry
+
+// function filterByCountry(users, countryCode) {
+//   return users.filter(user => user.nat === countryCode);
+// }
+
+// console.log(filterByCountry(users, "DE"));
+
+// filterByGender
+
+// function filterByGender(users, gender) {
+//   return users.filter(user => user.name.title === gender);
+// }
+
+// console.log(filterByGender(users, "Mr"));
+// console.log(filterByGender(users, "Miss"));
+
+// listEmails
+
+// function listEmails(users) {
+//   return users.map(user => user.email);
+// }
+
+// console.log(listEmails(users));
+
+// Reformat Emails
+
+// const newDomains = { FR: ".fr", CH: ".ch", DE: ".de", NO: ".no", US: ".us", TR: ".tr", FI: ".fi", GB: ".uk", NL: ".nl", NZ: ".nz", AU: ".au", ES: ".es", IE: ".ie", DK: ".dk", IR: ".ir", BR: ".br", CA: ".ca" };
+
+// function reformatEmails(users) {
+//   return users.map(user => {
+//     const lastName = user.name.last.toLowerCase();
+//     const firstName = user.name.first.toLowerCase();
+//     const domain = newDomains[user.nat];
+    
+//     return `${lastName}.${firstName}@evilcorp${domain}`;
+//   });
+// }
+
+// console.log(reformatEmails(users));
+
+// HIGH ORDER FUNCTIONS
+
